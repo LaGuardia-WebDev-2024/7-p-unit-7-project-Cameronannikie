@@ -5,27 +5,32 @@ void setup() {
 
 //🎯Variable Declarations Go Here
 var eyeSize =20
-var teethSize =24  ;                                                                                                                                               
+var teethSize =24  ;                
+var bunnyX=0;                                                                                                                               
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
- 
+ fill(255,255,255);
+ strokeWeight(1);
   background(255,255,255,0);
   
-ellipse(150,70,60,120); //left ear
-ellipse(240,70,60,120); //right ear
+ellipse(150+bunnyX,70,60,120); //left ear
+ellipse(240+bunnyX,70,60,120); //right ear
 
-ellipse(200,170,150,150); // face
+ellipse(200+bunnyX,170,150,150); // face
 
 fill(78,0,0);
-ellipse(170,150,eyeSize,eyeSize); //left eye
-ellipse(230,150,eyeSize,eyeSize); // right eye
-line(150,200,250,200); //mouth 
+ellipse(170+bunnyX,150,eyeSize,eyeSize); //left eye
+ellipse(230+bunnyX,150,eyeSize,eyeSize); // right eye
+line(150+bunnyX,200,250+bunnyX,200); //mouth 
 
 fill(0,0,0);
-rect(185,200,15,teethSize,teethSize); //left tooth
+rect(185+bunnyX,200,15,teethSize,teethSize); //left tooth
+rect(200+bunnyX,200,15,teethSize,teethSize); //right tooth 
 
   //Show x y values when mousepressed
   if(mousePressed){showXYPositions();}
+
+  bunnyX+=6
 
 }
 
