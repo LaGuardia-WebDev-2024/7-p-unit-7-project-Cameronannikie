@@ -12,7 +12,9 @@ draw = function(){
  fill(255,255,255);
  strokeWeight(1);
   background(255,255,255,0);
-  
+   
+ /* HID CODE*/
+
 ellipse(150+bunnyX,70,60,120); //left ear
 ellipse(240+bunnyX,70,60,120); //right ear
 
@@ -23,6 +25,8 @@ ellipse(170+bunnyX,150,eyeSize,eyeSize); //left eye
 ellipse(230+bunnyX,150,eyeSize,eyeSize); // right eye
 line(150+bunnyX,200,250+bunnyX,200); //mouth 
 
+ /* HID CODE*/
+
 fill(0,0,0);
 rect(185+bunnyX,200,15,teethSize,teethSize); //left tooth
 rect(200+bunnyX,200,15,teethSize,teethSize); //right tooth 
@@ -31,6 +35,14 @@ rect(200+bunnyX,200,15,teethSize,teethSize); //right tooth
   if(mousePressed){showXYPositions();}
 
   bunnyX+=6
+
+}
+
+{
+  /*HID CODE/*
+  //Mouse Pressed Procedure - Runs When Mouse Is Pressed On Canvas void mousePressed(bunnyX);
+  eyeSize=random(10,99);
+  teethSize=random(15,80);
 
 }
 
