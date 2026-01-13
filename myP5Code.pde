@@ -25,7 +25,7 @@ ellipse(170+bunnyX,150,eyeSize,eyeSize); //left eye
 ellipse(230+bunnyX,150,eyeSize,eyeSize); // right eye
 line(150+bunnyX,200,250+bunnyX,200); //mouth 
 
- /* HID CODE*/
+
 
 fill(0,0,0);
 rect(185+bunnyX,200,15,teethSize,teethSize); //left tooth
@@ -35,14 +35,6 @@ rect(200+bunnyX,200,15,teethSize,teethSize); //right tooth
   if(mousePressed){showXYPositions();}
 
   bunnyX+=6
-
-}
-
-{
-  /*HID CODE/*
-  //Mouse Pressed Procedure - Runs When Mouse Is Pressed On Canvas void mousePressed(bunnyX);
-  eyeSize=random(10,99);
-  teethSize=random(15,80);
 
 }
 
